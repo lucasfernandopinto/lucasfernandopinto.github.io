@@ -13,6 +13,7 @@ html {
 body {
   font-size: 1.6rem;
   margin-top: 15rem;
+  background-color: var(--background);
 }
 
 ul {
@@ -27,27 +28,42 @@ a {
 h1 {
   font-size: 6.4rem;
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--text-color);
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color);
 }
 
 .secondary-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-size: 4rem;
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
 }
 
-.tertiary-title {
-  font-size: 3.2rem;
-  font-weight: 500;
-  line-height: 4.5rem;
-  color: var(--secondary-color);
+.secondary-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-color);
 }
+
 
 p,
 .p {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 3.5rem;
+  color: var(--text-color);
 }
 
 p:not(:last-of-type),
@@ -65,10 +81,14 @@ p:not(:last-of-type),
 }
 
 .btn.btn-primary {
-  background-color: var(--dark-secondary-color);
-  color: var(--white);
-  font-weight: 400;
+  background-color: var(--secondary-color);
+  color: var(--black);
+  font-weight: 700;
   font-size: 1.4rem;
+}
+
+.icon{
+  width: 30px;
 }
 
 .max-width {
@@ -76,7 +96,15 @@ p:not(:last-of-type),
   max-width: 120rem;
   padding: 0 4rem;
   margin: 0 auto;
-  margin-bottom: 26rem;
+  margin-bottom: 15rem;
+}
+
+.max-width-about{
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 4rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
 .mb-0 {
@@ -117,6 +145,7 @@ p:not(:last-of-type),
   .max-width {
     padding: 0 2rem;
   }
+  
 }
 
 @media only screen and (max-width: 425px) {

@@ -1,8 +1,14 @@
 .about {
   display: flex;
   justify-content: space-between;
-  gap: 4rem;
-  scroll-margin-top: 20rem;
+
+}
+
+.description {
+  max-width: 56rem;
+  margin: 0 auto 6rem;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .about .about__left {
@@ -30,6 +36,10 @@
 .about .about__right {
   flex: 1;
   max-width: 66rem;
+}
+
+.lucas{
+  width: 400px;
 }
 
 @media only screen and (max-width: 768px) {

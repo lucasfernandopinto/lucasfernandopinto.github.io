@@ -8,11 +8,6 @@
   text-align: center;
 }
 
-.skills .skills__content .description {
-  max-width: 56rem;
-  margin: 0 auto 6rem;
-}
-
 .skills .skills__content ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
